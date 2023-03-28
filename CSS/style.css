@@ -13,7 +13,7 @@ h1{
 }
 h1:hover{
     cursor: pointer;
-    color: #990118;
+    color: yellow;
 }
 .navmenu{
     display: flex;
@@ -28,6 +28,7 @@ li{
     padding: 10px 25px;
     border-radius: 8px;
     font-size: 1.3em;
+    color: yellow;
 }
 li:hover{
     background: #990118;
