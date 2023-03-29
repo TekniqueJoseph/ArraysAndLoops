@@ -27,23 +27,34 @@
 // })
 // console.log(total)
 
-const scores = [[1, 2], [3, 4], [5, 6]];
+// const scores = [[1, 2], [3, 4], [5, 6]];
 
-const array1 = scores.map((subArray1) => {
-    return subArray1;
-}) 
-console.log(array1)
+// const array1 = scores.map((subArrays) => {
+//     return subArrays;
+// }) 
+// console.log(array1)
 
-const array2 = scores.map((nestedArray) => {
-    return nestedArray.map((nums) => {
-        return nums * 2
-    })
-})
-
-console.log(array2)
-
-// scores.map(function(subarray) {
-//   return subarray.map(function(number) {
-//     return number * 3;
-//   })
+// const array2 = scores.map((nestedArrays) => {
+//     return nestedArrays.map((nums) => {
+//         return nums * 2
+//     })
 // })
+
+// console.log(array2)
+
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+
+// Merge arrays
+// const merged = arr1.concat(arr2);
+
+// console.log(merged); // [1,2,3,4,5,6]
+console.log(arr1); // [1,2,3]
+console.log(arr2); // [4,5,6]
+
+const combined = (arr1.concat(arr2).map(num => {
+    return num
+}))
+
+console.log('combined',combined)
+
