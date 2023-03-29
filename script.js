@@ -40,7 +40,7 @@
 //     })
 // })
 
-// console.log(array2)
+// console.log(array2)+
 
 const arr1 = [1,2,3];
 const arr2 = [4,5,6];
@@ -53,8 +53,39 @@ console.log(arr1); // [1,2,3]
 console.log(arr2); // [4,5,6]
 
 const combined = (arr1.concat(arr2).map(num => {
-    return num
+    return num * 5 + ' Hello'
 }))
 
 console.log('combined',combined)
 
+let firstNames = ["super", "spider", "ant", "iron"]
+let lastName = "man";
+
+const fullname = firstNames.map((full) =>{
+    return full+lastName;
+})
+
+console.log(fullname)
+
+let numbers = [3.7, 4.9, 6.2]
+
+let rounded = numbers.map((nums) => {
+    return Math.round(nums)
+})
+console.log(rounded)
+
+let frontNane = ["wonder", "super", "spider", "ant", "iron"]
+let male = "man"
+let female = "woman"
+
+let wholeName = frontNane.map((frontNane, index) => {
+    return (index == 0) ?  frontNane + female : frontNane + male;
+})
+
+console.log(wholeName)
+   
+const newName = wholeName.map((theName, index) =>{
+    return theName + ' is at index # ' + index
+})
+
+console.log(newName)
