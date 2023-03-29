@@ -6,7 +6,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 100px 600px 100px;
+    grid-template-rows: 100px 555px 100px;
 }
 h1{
     color: aliceblue;
