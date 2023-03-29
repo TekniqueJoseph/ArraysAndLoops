@@ -85,7 +85,7 @@ let wholeName = frontNane.map((frontNane, index) => {
 console.log(wholeName)
    
 const newName = wholeName.map((theName, index) =>{
-    return theName + ' is at index # ' + index
+    return `${theName} is at index # ${index}`
 })
 
 console.log(newName)
