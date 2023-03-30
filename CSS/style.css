@@ -6,7 +6,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 100px 600px 100px;
+    grid-template-rows: 100px 70vh 100px;
 }
 h1{
     color: aliceblue;
@@ -35,6 +35,7 @@ li:hover{
     cursor: pointer;
 }
 .hero{
+    margin-top: 105px;
     width: 90vw;
     margin: 0 auto;
     text-align: center;
@@ -44,6 +45,7 @@ img{
     height: 500px;
     border-radius: 50%;
     transition: transform 1.5s ease-in-out;
+    margin-top: 7vh;
 }
 img:hover {
     transform: rotate(720deg);
