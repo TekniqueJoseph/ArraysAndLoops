@@ -2,7 +2,7 @@
 // String Array
 const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
 // map method iterates through the wu array and returns each string from the array wu into new array members
-const members = wu.map (cru =>{
+const members = wu.map(cru =>{
     return cru
 })
 console.log(members)
@@ -100,7 +100,6 @@ console.log(`The value returned is: ${total}`)
 
 // **********map***********
 // ******Filter Array******
-
 // ****Reduce Array********
 // reduce method iterates through reduceNums array and multiplies each array value(curr), by accu whos's initial value is 1. The reduce method does not return an array. It simply returns a value
 
