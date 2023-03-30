@@ -1,5 +1,5 @@
 // String Array
-const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae'];
+const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
 // map method iterates through the wu array and returns each string from the array wu into new array members
 const members = wu.map (cru =>{
     console.log(cru)
