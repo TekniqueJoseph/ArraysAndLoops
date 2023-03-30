@@ -1,41 +1,39 @@
+// **********map methods***********
 // String Array
 const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
 // map method iterates through the wu array and returns each string from the array wu into new array members
 const members = wu.map (cru =>{
-    console.log(cru)
+    return cru
 })
+console.log(members)
 
-// map mathod iterates through the wu array and returns the length of each string into array nameLength 
+// map method iterates through the wu array and returns the length of each string into array nameLength 
 const nameLength = wu.map(name => {
     return name.length;
 })
 console.log(nameLength)
 
-// map method iterates through the wu array and returns each sting with the index of the coresonding string into array mamaber Id
-const memberId = wu.map ((cru,index) =>{
-    console.log(cru,index)
+// map method iterates through the wu array and returns each sting with it's index. The results are stored into array memaber Id. Template strings is used to display the resulting strings
+const memberId = wu.map ((cruName,index) =>{
+  return `${cruName}'s index is ${index}`
 })
+console.log(memberId)
 
-// map method iterates through wiz array multiplies each number ny 2. the reults are stored in array math
-const wiz = [1,2,3,4,5,6,7,8,9];
+// map method iterates through wiz array and multiplies each number by 2. the reults are stored in array math
+const wiz = [1,2,3,4,5];
 
 const math = wiz.map(num => {
-    console.log(num * 2)
+    return num *2
  })
+ console.log(math)
 
-//  map method iterates through wiz array and multiplies each value by let total which is initialzed with a value of 1
+//  map method iterates through wiz array and multiplies each value by total which is initialzed with a value of 1. The wiz array does not change. The multiplication results are stored in the variable total
 let total = 1;
 const add = wiz.map((val) =>{
     total = total * val
-  return val
+  return total
 })
-console.log('regula', total)
-
-// reduce method iterates through wiz array and multiplies each array value(curr), by accu whs's initial value is 1
-let reduce = wiz.reduce((accu,curr) => {
-    return accu * curr
-},1)
-console.log('reduce',reduce)
+console.log(`The value returned is: ${total}`)
 
 // const scores = [[1, 2], [3, 4], [5, 6]];
 
@@ -100,5 +98,39 @@ console.log('reduce',reduce)
 
 // console.log(newName)
 
+// **********map***********
 // ******Filter Array******
-// *******Reduce Array*****
+
+// ****Reduce Array********
+// reduce method iterates through reduceNums array and multiplies each array value(curr), by accu whos's initial value is 1. The reduce method does not return an array. It simply returns a value
+
+// const reduceNums = [1,2,3,4,5]
+// let reduce = reduceNums.reduce((accu,curr) => {
+//     return accu * curr
+// },1)
+// console.log('reduce', reduce)
+
+// *******sort*************
+// *******every************
+// *******some*************
+// ***flat flat map********
+
+
+// *******forEach**********
+// *******for of***********
+
+// *****object keys********
+// const object1 = {
+//     a: 'somestring',
+//     b: 42,
+//     c: false
+//   };
+//   console.log(Object.keys(object1));
+
+// *****object Values******
+// *****object entries*****
+
+// Pomises (then catch timeout setTimeout)
+// extends
+// clases
+// class ChildClass extends ParentClass { /* … */ }

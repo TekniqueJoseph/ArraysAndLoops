@@ -6,7 +6,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 100px 500px 100px;
+    grid-template-rows: 100px 600px 100px;
 }
 h1{
     color: aliceblue;
@@ -28,7 +28,6 @@ li{
     padding: 10px 25px;
     border-radius: 8px;
     font-size: 1.3em;
-    color: yellow;
 }
 li:hover{
     background: #990118;
@@ -36,10 +35,9 @@ li:hover{
     cursor: pointer;
 }
 .hero{
-    width: 90%;
+    width: 90vw;
     margin: 0 auto;
     text-align: center;
-    margin-top: 7vh;
 }
 img{
     width: 500px;
@@ -51,14 +49,9 @@ img:hover {
     transform: rotate(720deg);
     cursor: pointer;
   }
-
-
-
 .moreinfo{
     text-align: center;
-    margin-top: 20vh;
 }
-
 button{
     background: #990118;
     color: aliceblue;
@@ -67,7 +60,6 @@ button{
     border-radius: 6px;
     border: none;
 }
-
 button:hover{
     background-color: aliceblue;
     color: black;
