@@ -14,7 +14,7 @@ const nameLength = wu.map(name => {
 console.log(nameLength)
 
 // map method iterates through the wu array and returns each sting with it's index. The results are stored into array memaber Id. Template strings is used to display the resulting strings
-const memberId = wu.map ((cruName,index) =>{
+const memberId = wu.map ((cruName, index) =>{
   return `${cruName}'s index is ${index}`
 })
 console.log(memberId)
