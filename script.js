@@ -35,12 +35,12 @@ const add = wiz.map((val) =>{
 })
 console.log(`The value returned is: ${total}`)
 
-// const scores = [[1, 2], [3, 4], [5, 6]];
+const scores = [[1, 2], [3, 4], [5, 6]];
 
-// const array1 = scores.map((subArrays) => {
-//     return subArrays;
-// }) 
-// console.log(array1)
+const array1 = scores.map((subArrays) => {
+    return subArrays;
+}) 
+console.log(array1)
 
 // const array2 = scores.map((nestedArrays) => {
 //     return nestedArrays.map((nums) => {
