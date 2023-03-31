@@ -23,7 +23,7 @@ console.log(memberId)
 const wiz = [1,2,3,4,5];
 
 const math = wiz.map(num => {
-    return num *2
+    return num * 2
  })
  console.log(math)
 
@@ -36,22 +36,23 @@ const add = wiz.map((val) =>{
 console.log(`The value returned is: ${total}`)
 // 
 const scores = [[1, 2], [3, 4], [5, 6]];
+console.log('scores',scores)
 // map method iterates through array scores and returns an array of the sub arrays
 const array1 = scores.map((subArrays) => {
     return subArrays;
 }) 
-console.log(array1)
+console.log('array1',array1)
 
 // the code below makes use of the map method twice. the first use iterates through array2 and returns and stores the sub arrays
-// the map metod iterates through the sub arrays and each value is multiplied by 2
-const array2 = scores.map((nestedArrays) => {
+// the map metod iterates through the nested arrays and each value is multiplied by 2
+const array2 = scores.map((nestedArrays, index) => {
     return nestedArrays.map((nums) => {
-      console.log('nested',nums)
+      console.log(`Nested element ${nums} at index ${index}`)
         return nums *2
     })
 })
 
-console.log('nested',array2)
+console.log('array2',array2)
 // the cose below shows hot the concat method can beused to combine two arrays
 const arr1 = [1,2,3];
 const arr2 = [4,5,6];
