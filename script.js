@@ -99,33 +99,35 @@ console.log(newName)
 
 // ******filter method - The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.******
 const wuTang = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
+// in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
 const results = wuTang.filter((chars) => {
     return chars.length > 3
 })
 console.log(results)
 
+// in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
 const ages = [32, 33, 16, 40];
 const ageCheck = ages.filter((age) => {
       return age >= 18
 })
 console.log(ageCheck)
 
+// in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
 const creatures = [
   {name: "Shark", habitat: "Ocean"},
   {name: "Whale", habitat: "Ocean"},
   {name: "Lion", habitat: "Savanna"},
   {name: "Monkey", habitat: "Jungle"}
 ];
-
 const aquaticCreatures =  creatures.filter(function(creature) {
   return creature.habitat === "Ocean";
 });
-
 console.log(aquaticCreatures);
 
+// in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
 let numeral = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// function to check even numbers
+// // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
 let evenNumeral = numeral.filter((even) =>{
   return (even % 2 === 0) ? even : false;
 })
