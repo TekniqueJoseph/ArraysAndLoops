@@ -46,6 +46,7 @@ console.log(array1)
 // the map metod iterates through the sub arrays and each value is multiplied by 2
 const array2 = scores.map((nestedArrays) => {
     return nestedArrays.map((nums) => {
+      console.log('nested',nums)
         return nums *2
     })
 })
@@ -73,9 +74,10 @@ const fullname = firstNames.map((full) =>{
     return full+lastName;
 })
 console.log(fullname)
+
 // numbers array
 let numbers = [3.7, 4.9, 6.2]
-// the code below maps throgh the numbers array and uses the map method to round the numbers
+// the code below maps throgh the numbers array and uses the round method to round the numbers
 let rounded = numbers.map((nums) => {
     return Math.round(nums)
 })
@@ -90,6 +92,7 @@ let wholeName = frontNane.map((frontNane, index) => {
     return (index == 0) ?  frontNane + female : frontNane + male;
 })
 console.log(wholeName)
+
 // the code below maps through the wholename array created above, and with trmplate strings, returns the value and it's index  
 const newName = wholeName.map((theName, index) =>{
     return `${theName} is at index # ${index}`
@@ -142,6 +145,17 @@ let reduce = reduceNums.reduce((accu,curr) => {
 },1)
 console.log('reduce', reduce)
 
+const topSix = [
+  { name: "Nigeria", position: "1st", points: 43 },
+  { name: "England", position: "2nd", points: 37 },
+  { name: "USA", position: "3rd", points: 35 },
+  { name: "South Africa", position: "4th", points: 30 },
+  { name: "Brazil", position: "5th", points: 27 },
+  { name: "Korea", position: "6th", points: 23 }
+]
+const totalPoints = topSix.reduce((acc, currTeam) => acc + currTeam.points, 0);
+console.log(totalPoints)
+
 // *******sort*************
 // *******every************
 // *******some*************
@@ -172,4 +186,4 @@ console.log('reduce', reduce)
 // class ChildClass extends ParentClass { /* … */ }
 // super
 // shallow copy
-// fetch
+// spread operator
