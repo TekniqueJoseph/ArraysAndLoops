@@ -136,12 +136,11 @@ console.log(evenNumeral)
 
 // ****Reduce Array********
 // reduce method iterates through reduceNums array and multiplies each array value(curr), by accu whos's initial value is 1. The reduce method does not return an array. It simply returns a value
-
-// const reduceNums = [1,2,3,4,5]
-// let reduce = reduceNums.reduce((accu,curr) => {
-//     return accu * curr
-// },1)
-// console.log('reduce', reduce)
+const reduceNums = [1,2,3,4,5]
+let reduce = reduceNums.reduce((accu,curr) => {
+    return accu * curr
+},1)
+console.log('reduce', reduce)
 
 // *******sort*************
 // *******every************
