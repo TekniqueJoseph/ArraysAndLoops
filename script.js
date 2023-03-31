@@ -99,19 +99,37 @@ console.log(newName)
 
 // ******filter method - The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.******
 const wuTang = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
-
 const results = wuTang.filter((chars) => {
     return chars.length > 3
 })
 console.log(results)
 
 const ages = [32, 33, 16, 40];
-
 const ageCheck = ages.filter((age) => {
       return age >= 18
 })
-
 console.log(ageCheck)
+
+const creatures = [
+  {name: "Shark", habitat: "Ocean"},
+  {name: "Whale", habitat: "Ocean"},
+  {name: "Lion", habitat: "Savanna"},
+  {name: "Monkey", habitat: "Jungle"}
+];
+
+const aquaticCreatures =  creatures.filter(function(creature) {
+  return creature.habitat === "Ocean";
+});
+
+console.log(aquaticCreatures);
+
+let numeral = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// function to check even numbers
+let evenNumeral = numeral.filter((even) =>{
+  return (even % 2 === 0) ? even : false;
+})
+console.log(evenNumeral)
 
 
 // ****Reduce Array********
@@ -142,11 +160,15 @@ console.log(ageCheck)
 
 // *****object Values******
 // *****object entries*****
+// then()
+// Pomises (resolve reject catch timeout setTimeout)
+// A JavaScript Promise object can be:
+// Pending
+// Fulfilled
+// Rejected
 
-// Pomises (then catch timeout setTimeout)
-// extends
 // clases
 // class ChildClass extends ParentClass { /* … */ }
 // super
-
+// shallow copy
 // fetch
