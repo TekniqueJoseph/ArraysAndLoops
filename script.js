@@ -13,7 +13,7 @@ const nameLength = wu.map(name => {
 })
 console.log(nameLength)
 
-// map method iterates through the wu array and returns each sting with it's index. The results are stored into array memaber Id. Template strings is used to display the resulting strings
+// map method iterates through the wu array and returns each sting with it's index. The results are stored into array memaberId. Template strings is used to display the resulting strings
 const memberId = wu.map ((cruName, index) =>{
   return `${cruName}'s index is ${index}`
 })
@@ -21,7 +21,6 @@ console.log(memberId)
 
 // map method iterates through wiz array and multiplies each number by 2. the reults are stored in array math
 const wiz = [1,2,3,4,5];
-
 const math = wiz.map(num => {
     return num * 2
  })
@@ -31,7 +30,7 @@ const math = wiz.map(num => {
 let total = 1;
 const add = wiz.map((val) =>{
     total = total * val
-  return total
+      return total
 })
 console.log(`The value returned is: ${total}`)
 // 
@@ -165,7 +164,6 @@ const position = [[1, 2], [3, 4], [5, 6]];
 const seed = position.flatMap((num) => {
     return num.flat() 
 })
-
 console.log('flat',seed)
 
 
