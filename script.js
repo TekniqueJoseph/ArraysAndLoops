@@ -52,46 +52,46 @@ const wiz = [1,2,3,4,5];
 // })
 // console.log('array2',array2)
 
-// // the code below shows hot the concat method can beused to combine two arrays
-const arr1 = [1,2,3];
-const arr2 = [4,5,6];
-console.log(arr1); // [1,2,3]
-console.log(arr2); // [4,5,6]
-// // Merge arrays
-const merged = arr1.concat(arr2);
-console.log('merged',merged); // [1,2,3,4,5,6]
-// the code below maps through the combined arrays and mu
-const combined = (arr1.concat(arr2).map(num => {
-    return `Value times 5 = ${num * 5}`
-}))
-console.log('combined',combined)
+// // the code below shows how the concat method can beused to combine two arrays
+// const arr1 = [1,2,3];
+// const arr2 = [4,5,6];
+// console.log(arr1); // [1,2,3]
+// console.log(arr2); // [4,5,6]
+// // // Merge arrays
+// const merged = arr1.concat(arr2);
+// console.log('merged',merged); // [1,2,3,4,5,6]
+// // the code below maps through the combined arrays and mulyiplies each element by 5
+// const combined = (arr1.concat(arr2).map(num => {
+//     return `Value times 5 = ${num * 5}`
+// }))
+// console.log('combined',combined)
 
 // // string array
 // let firstNames = ["super", "spider", "ant", "iron"]
 // let lastName = "man";
-// // the code below maps through array firstNames and returns the values with variable lastNae concated to it
+// // the code below maps through array firstNames and returns the values with variable lastName concated to it
 // const fullname = firstNames.map((full) =>{
-//     return full+lastName;
+//     return full+lastName 
 // })
 // console.log(fullname)
 
-// // numbers array
+// numbers array
 // let numbers = [3.7, 4.9, 6.2]
 // // the code below maps throgh the numbers array and uses the round method to round the numbers
 // let rounded = numbers.map((nums) => {
-//     return Math.round(nums)
+//     return Math.round(nums) 
 // })
 // console.log(rounded)
 // // super heros array
-// let frontNane = ["wonder", "super", "spider", "ant", "iron", "method"]
-// let male = "man"
-// let female = "woman"
-// // the code below maps through the frontName array and adds the appropriate gender variable to the front name value
-// // The ternary operator ? is basically a shortcut for a traditional if...else statement, with the condition and value if true or false
-// let wholeName = frontNane.map((frontNane, index) => {
-//     return (index == 0) ?  frontNane + female : frontNane + male;
-// })
-// console.log(wholeName)
+let frontNane = ["wonder", "super", "spider", "ant", "iron", "method"]
+let male = "man"
+let female = "woman"
+// the code below maps through the frontName array and adds the appropriate gender variable to the front name value
+// The ternary operator ? is basically a shortcut for a traditional if...else statement, with the condition and value if true or false
+let wholeName = frontNane.map((frontNane, index) => {
+    return (index == 0) ?  frontNane + female : frontNane + male;
+})
+console.log(wholeName)
 
 // // the code below maps through the wholename array created above, and with trmplate strings, returns the value and it's index  
 // const newName = wholeName.map((theName, index) =>{
