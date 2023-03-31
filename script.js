@@ -166,7 +166,7 @@ const seed = position.flatMap((num) => {
     return num.flat() 
 })
 
-console.log('flat',seed * 2)
+console.log('flat',seed)
 
 
 // *******forEach**********
