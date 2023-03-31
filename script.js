@@ -161,6 +161,12 @@ console.log(totalPoints)
 // *******every************
 // *******some*************
 // ***flat flat map********
+const position = [[1, 2], [3, 4], [5, 6]];
+const seed = position.flatMap((num) => {
+    return num.flat() 
+})
+
+console.log('flat',seed * 2)
 
 
 // *******forEach**********
