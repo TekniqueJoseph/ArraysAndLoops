@@ -83,15 +83,15 @@ const wiz = [1,2,3,4,5];
 // })
 // console.log(rounded)
 // // super heros array
-let frontNane = ["wonder", "super", "spider", "ant", "iron", "method"]
-let male = "man"
-let female = "woman"
-// the code below maps through the frontName array and adds the appropriate gender variable to the front name value
-// The ternary operator ? is basically a shortcut for a traditional if...else statement, with the condition and value if true or false
-let wholeName = frontNane.map((frontNane, index) => {
-    return (index == 0) ?  frontNane + female : frontNane + male;
-})
-console.log(wholeName)
+// let frontNane = ["wonder", "super", "spider", "ant", "iron", "method"]
+// let male = "man"
+// let female = "woman"
+// // the code below maps through the frontName array and adds the appropriate gender variable to the front name value
+// // The ternary operator ? is basically a shortcut for a traditional if...else statement, with the condition and value if true or false
+// let wholeName = frontNane.map((frontNane, index) => {
+//     return (index == 0) ?  frontNane + female : frontNane + male;
+// })
+// console.log(wholeName)
 
 // // the code below maps through the wholename array created above, and with trmplate strings, returns the value and it's index  
 // const newName = wholeName.map((theName, index) =>{
@@ -192,3 +192,20 @@ console.log(wholeName)
 // super
 // shallow copy
 // spread operator
+// useState
+//  let counter = 0;
+
+//  function incrementCounter(){
+//     counter = counter + 1; 
+//     renderState()
+//  }
+
+//  function renderState(){
+//     console.log(counter);
+//  }
+
+//  setInterval( function () {
+//     incrementCounter()
+//  }, 1000)
+
+// Create Greet.js (use import React from 'react')-> export from Greet.js -> import in App.js->  include in App component using self closing tag <Greet/>
