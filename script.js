@@ -266,11 +266,12 @@ const chars = crew.some((letts) => {
 console.log(chars)
 
 // // ***flat flat map********
-// const position = [[1, 2], [3, 4], [5, 6]];
-// const seed = position.flatMap((num) => {
-//     return num.flat() 
-// })
-// console.log('flat',seed)
+const position = [[1, 2], [3, 4], [5, 6]];
+const seed = position.flatMap((num) => {
+    return num.flat() 
+})
+console.log('position array',position)
+console.log(`flattened position array in new seed array`,seed)
 
 
 // *******forEach**********
