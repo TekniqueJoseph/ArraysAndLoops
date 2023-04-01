@@ -189,26 +189,26 @@
 // }
 // console.log('pure sort function',sortedNums())
 
-let numbers = [0, 1, 2, 3, 10, 20, 30 ];
-console.log('original numbers array altered by sort function', numbers.sort())
+// let numbers = [0, 1, 2, 3, 10, 20, 30 ];
+// console.log('original numbers array altered by sort function', numbers.sort())
 
-const sortNums2 = numbers.sort((a,b) =>{
-    return a-b
-})
-console.log('sortNums2',sortNums2)
-console.log('original numbers array after sortNums2', numbers)
+// const sortNums2 = numbers.sort((a,b) =>{
+//     return a-b
+// })
+// console.log('sortNums2',sortNums2)
+// console.log('original numbers array after sortNums2', numbers)
 
 
-let numbers2 = [0, 1, 2, 3, 10, 20, 30 ];
-const mapNum = numbers2.map((nums) =>{
-        numbers2.sort((a,b) =>{
-            return a-b
-        })
-    return nums
-})
-console.log('original numbers2 array sorted by string',numbers2.sort())
-console.log('new mapNum array sorted by number',mapNum)
-console.log('original numbers2 array sorted by string',numbers2.sort())
+// let numbers2 = [0, 1, 2, 3, 10, 20, 30 ];
+// const mapNum = numbers2.map((nums) =>{
+//         numbers2.sort((a,b) =>{
+//             return a-b
+//         })
+//     return nums
+// })
+// console.log('original numbers2 array sorted by string',numbers2.sort())
+// console.log('new mapNum array sorted by number',mapNum)
+// console.log('original numbers2 array sorted by string',numbers2.sort())
 
 
 
@@ -225,7 +225,46 @@ console.log('original numbers2 array sorted by string',numbers2.sort())
 // console.log(reverseNums2())
 
 // // *******every************
+// The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+// const digits = [1, 30, 39, 29, 10, 13];
+
+// const evaluate = digits.every((nums) => {
+//     return nums < 30
+// })
+// console.log(evaluate)
+
+// const people = ['pos', 'mase', 'dave'];
+
+// const length = people.every((name) => {
+//     return name.length > 2
+// })
+// console.log(length)
+
+// const char = people.every((letter) => {
+//     return letter.includes('e')
+// })
+// console.log(char)
+
 // // *******some*************
+// The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+const digit2 = [1, 2, 3, 4, 5];
+const check = digit2.some((nums) => {
+    return nums % 2 === 0
+})
+console.log(check)
+
+const crew = ['phipe', 'tip', 'shaheed', 'jarobee']
+const letters = crew.some((lets) => {
+    return lets.length === 4
+})
+console.log(letters)
+
+const chars = crew.some((letts) => {
+    return letts.includes('p')
+})
+console.log(chars)
+
 // // ***flat flat map********
 // const position = [[1, 2], [3, 4], [5, 6]];
 // const seed = position.flatMap((num) => {
