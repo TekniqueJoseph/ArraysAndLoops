@@ -61,14 +61,14 @@
 // // the code below shows how the concat method can beused to combine two arrays
 // const arr1 = [1,2,3];
 // const arr2 = [4,5,6];
-// console.log(arr1); // [1,2,3]
-// console.log(arr2); // [4,5,6]
-// // // Merge arrays
+// console.log('arr1',arr1); // [1,2,3]
+// console.log('arr2',arr2); // [4,5,6]
+// // // // Merge arrays using concat
 // const merged = arr1.concat(arr2);
-// console.log('merged',merged); // [1,2,3,4,5,6]
+// console.log('merged arr1 & arr2',merged); // [1,2,3,4,5,6]
 // // the code below maps through the combined arrays and mulyiplies each element by 5
 // const combined = (arr1.concat(arr2).map(num => {
-//     return `Value times 5 = ${num * 5}`
+//     return `Value ${num} * 5 = ${num * 5}`
 // }))
 // console.log('combined',combined)
 
