@@ -72,7 +72,7 @@
 // }))
 // console.log('combined',combined)
 
-// // string array
+// string array
 // let firstNames = ["super", "spider", "ant", "iron"]
 // let lastName = "man";
 // // the code below maps through array firstNames and returns the values with variable lastName concated to it
@@ -83,19 +83,19 @@
 
 // numbers array
 // let numbers = [3.7, 4.9, 6.2]
-// // the code below maps throgh the numbers array and uses the round method to round the numbers
+// the code below maps throgh the numbers array and uses the round method to round the numbers
 // let rounded = numbers.map((nums) => {
 //     return Math.round(nums) 
 // })
 // console.log(rounded)
-// // super heros array
+// super heros array
 // let frontNane = ["wonder", "super", "spider", "ant", "iron", "method"]
 // let male = "man"
 // let female = "woman"
-// // the code below maps through the frontName array and adds the appropriate gender variable to the front name value
-// // The ternary operator ? is basically a shortcut for a traditional if...else statement, with the condition and value if true or false
+// // // the code below maps through the frontName array and adds the appropriate gender variable to the front name value
+// // // The ternary operator ? is basically a shortcut for a traditional if...else statement, with the condition and value if true or false
 // let wholeName = frontNane.map((frontNane, index) => {
-//     return (index == 0) ?  frontNane + female : frontNane + male;
+//     return (index === 0) ?  frontNane + female : frontNane + male;
 // })
 // console.log(wholeName)
 
@@ -103,14 +103,13 @@
 // const newName = wholeName.map((theName, index) =>{
 //     return `${theName} is at index # ${index}`
 // })
-
 // console.log(newName)
 
 // // ******filter method - The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.******
-// const wuTang = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
-// // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
+// const wuTang = ['rza', 'gza', 'odb', 'dec', 'U God', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
+// // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the method
 // const results = wuTang.filter((chars) => {
-//     return chars.length > 3
+//     return chars.length > 4
 // })
 // console.log(results)
 
@@ -133,9 +132,13 @@
 // });
 // console.log(aquaticCreatures);
 
-// // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
-// let numeral = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const livingCreatures = creatures.filter((animal) => {
+//      return animal.habitat === 'Savanna' || animal.habitat === 'Jungle';
+// })
+// console.log(livingCreatures);
 
+
+// let numeral = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // // // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
 // let evenNumeral = numeral.filter((even) =>{
 //   return (even % 2 === 0) ? even : false;
@@ -160,9 +163,67 @@
 //   { name: "Korea", position: "6th", points: 23 }
 // ]
 // const totalPoints = topSix.reduce((acc, currTeam) => acc + currTeam.points, 0);
-// console.log(totalPoints)
+// console.log('team points total',totalPoints)
+
+// const doublePoints = topSix.reduce((acc, currTeam) =>{
+//     return acc + currTeam.points * 2
+// },0)
+// console.log('team points doubled',doublePoints)
 
 // // *******sort*************
+// The sort() method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+// const months = ['March', 'Jan', 'Feb', 'Dec'];
+// const sortedMonths = () =>{
+//     return months.sort()
+// }
+// console.log(sortedMonths())
+
+// const reversdMonths = () =>{
+//     return months.reverse()
+// }
+// console.log(reversdMonths())
+
+// const array1 = [0, 1, 2, 3, 10, 20, 30 ];
+// const sortedNums = () => {
+//     return array1.sort()
+// }
+// console.log('pure sort function',sortedNums())
+
+let numbers = [0, 1, 2, 3, 10, 20, 30 ];
+console.log('original numbers array altered by sort function', numbers.sort())
+
+const sortNums2 = numbers.sort((a,b) =>{
+    return a-b
+})
+console.log('sortNums2',sortNums2)
+console.log('original numbers array after sortNums2', numbers)
+
+
+let numbers2 = [0, 1, 2, 3, 10, 20, 30 ];
+const mapNum = numbers2.map((nums) =>{
+        numbers2.sort((a,b) =>{
+            return a-b
+        })
+    return nums
+})
+console.log('original numbers2 array sorted by string',numbers2.sort())
+console.log('new mapNum array sorted by number',mapNum)
+console.log('original numbers2 array sorted by string',numbers2.sort())
+
+
+
+// let reverseNums = [0, 1, 2, 3, 10, 20, 30 ];
+// const revNums2 = reverseNums.sort((a,b) =>{
+//     return b-a
+// })
+// console.log(reverseNums)
+
+// let newReverseNums = [0, 1, 2, 3, 10, 20, 30 ];
+// const reverseNums2 = () => {
+//     return newReverseNums.reverse()
+// }
+// console.log(reverseNums2())
+
 // // *******every************
 // // *******some*************
 // // ***flat flat map********
