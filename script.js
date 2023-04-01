@@ -19,17 +19,20 @@
 // })
 // console.log(memberId)
 
-// // map method iterates through wiz array and multiplies each number by 2. the reults are stored in array math
-const wiz = [1,2,3,4,5];
-// const math = wiz.map(num => {
-//     return `num*2 = ${num*2}`
+// // map method iterates through wiz array and multiplies each number by 2. the reults are stored in new array arrayMultiplied
+// const wiz = [1,2,3,4,5];
+// const arrayMultiplied = wiz.map(num => {
+//     return `Element ${num} multiplied by 2 = ${num*2}`
 //  })
-//  console.log(math)
+//  console.log(arrayMultiplied)
 
 //  map method iterates through wiz array and multiplies each value by total which is initialzed with a value of 1 and changes with each iteration to the result of its current total being multiplied by the next num in the array. The wiz array does not change. The multiplication results are stored in the variable total
+// const wiz = [1,2,3,4,5];
 // let total = 1;
 // const add = wiz.map((val) =>{
+//     console.log(`${val} * ${total} =`)
 //     total = total * val
+//     console.log(`New total is ${total}`)
 //       return total
 // })
 // console.log(`The value returned is: ${total}`)
@@ -40,13 +43,16 @@ const wiz = [1,2,3,4,5];
 // const array1 = scores.map((subArrays) => {
 //     return subArrays;
 // }) 
-// console.log('array1',array1)
+// console.log('array1 array',array1)
 
-// // the code below makes use of the map method twice. the first use iterates through array2 and returns and stores the sub arrays
-// // the map metod iterates through the nested arrays and each value is multiplied by 2
+// // the code below makes use of the map method twice. in the first use, map iterates through scores and stores the sub arrays into into inividual arrays named nestedArrays
+// // in the second use, the map method creates new arrays, iterates through them, and each value is multiplied by 2. The results of all this are stored in new array2
 // const array2 = scores.map((nestedArrays, index) => {
+//     console.log('first map',nestedArrays, index)
 //     return nestedArrays.map((nums, indi) => {
-//       console.log(`Element ${nums} array's index is ${index}. It's indi is ${indi}.`)
+//         console.log('second map',nestedArrays, indi)
+//         // console.log(nestedArrays)
+//         // console.log(`Element ${nums} array's index is ${index}. It's indi is ${indi}.`)
 //         return nums *2
 //     })
 // })
