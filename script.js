@@ -382,8 +382,7 @@ console.log(video(model,memory))
 console.log(video('radeon','64gz'))
 console.log(card)
 
-// spread operator
-
+// spread operator - The spread (...) syntax allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected. In an object literal, the spread syntax enumerates the properties of an object and adds the key-value pairs to the object being created.
 const numbers = [1, 2, 3, 4, 5, 6];
 const [one, two, ...rest] = numbers;
 console.log(rest)
@@ -411,7 +410,6 @@ const myVehicle = {
     return x + y + z;
   }
   const numberArray = [1, 2, 3];
-  
   console.log(sum(...numberArray));
 
 // clases
