@@ -343,7 +343,7 @@ const ampDetailsArray = Object.keys(amp)
 console.log(ampDetailsArray);
 
 
-// *****object entries*****
+// object entries - The Object.entries() static method returns an array of a given object's own enumerable string-keyed property key-value pairs.
 
 const ampSpecs = Object.entries(amp)
 console.log(ampSpecs)
