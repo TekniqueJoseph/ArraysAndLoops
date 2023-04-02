@@ -325,7 +325,7 @@ const amp = {
     mode: 'bridge',
     purpose()
     {
-        console.log(`The ${this.modelName} with ${this.watts[0]} watts will rock the house.`);
+        console.log(`The ${this.modelName} with ${this.watts[0]} watts is gonna bump.`);
     },
 }
 console.log(amp.purpose())
@@ -342,20 +342,35 @@ console.log(ampArray)
 const ampDetailsArray = Object.keys(amp)
 console.log(ampDetailsArray);
 
-
 // object entries - The Object.entries() static method returns an array of a given object's own enumerable string-keyed property key-value pairs.
-
+// syntax - Object.entries(obj)
 const ampSpecs = Object.entries(amp)
 console.log(ampSpecs)
 
-// ******constructor
+for (const [key, value] of Object.entries(amp)) {
+    console.log(`${key}: ${value}`);
+  }
+
+// constructor - The Object() constructor turns the input into an object. Its behavior depends on the input's type. If the value is null or undefined, it creates and returns an empty object. Otherwise, it returns an object of a Type that corresponds to the given value. If the value is an object already, it returns the value.
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+  }
+
+// Create a Person object
+const myFather = new Person("John", "Doe", 50, "blue");
+console.log(myFather)
+
 // ******deconstructor
 // spread operator
 // clases
 // class ChildClass extends ParentClass { /* … */ }
 // super
 // then()
-// Pomises (resolve reject catch timeout setTimeout)// state
+// Pomises (resolve reject catch timeout setTimeout)
 // A JavaScript Promise object can be:
     // Pending
     // Fulfilled
