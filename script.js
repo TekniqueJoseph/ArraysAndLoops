@@ -415,15 +415,16 @@ const myVehicle = {
 // clases
 // class ChildClass extends ParentClass { /* … */ }
 // super
+// JSON.stringify()
+// JSON.parse()
+// fetch()
 // then()
 // Pomises (resolve reject catch timeout setTimeout)
 // A JavaScript Promise object can be:
     // Pending
     // Fulfilled
     // Rejected
-// fetch
 // async await
-// JSON.stringify()
 // ******React
 // jsx
 // functional component
@@ -438,6 +439,7 @@ const myVehicle = {
 // shallow copy vs deep copy --- value vs reference
 // a = 25
 // b = a //copies value, not address
+
 // console.log(a)
 // console.log(b)
 // a = 45
