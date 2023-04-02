@@ -364,7 +364,7 @@ function Person(first, last, age, eye) {
 const myFather = new Person("John", "Doe", 50, "blue");
 console.log(myFather)
 
-// ******Destructuring
+// Destructuring - Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, and maps and set them into new, distinct variables. Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
 const card = {
     manufacture: 'Nvidia',
     model: 'geForce',
@@ -375,12 +375,45 @@ const card = {
 let {manufacture, model, version, memory} = card;
 console.log(model)
 
-const video = (() =>{
+const video = ((model, memory) => {
     return `The model is ${model} with ${memory} of memory`;
 })
-console.log(video())
+console.log(video(model,memory))
+console.log(video('radeon','64gz'))
+console.log(card)
 
 // spread operator
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const [one, two, ...rest] = numbers;
+console.log(rest)
+
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+console.log(numbersCombined)
+
+const myVehicle = {
+    brand: 'Ford',
+    model: 'Mustang',
+    color: 'red'
+  }
+  
+  const updateMyVehicle = {
+    type: 'car',
+    year: 2021, 
+    color: 'yellow'
+  }
+  const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+  console.log(myUpdatedVehicle)
+
+  function sum(x, y, z) {
+    return x + y + z;
+  }
+  const numberArray = [1, 2, 3];
+  
+  console.log(sum(...numberArray));
+
 // clases
 // class ChildClass extends ParentClass { /* … */ }
 // super
