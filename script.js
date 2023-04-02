@@ -301,6 +301,9 @@ btn.addEventListener('click', function () {
 // console.log(newAlph)
 
 // for...of - The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object. Iterable objects include instances of built-ins such as Array, String, TypedArray, Map, Set, NodeList (and other DOM collections), as well as the arguments object, generators produced by generator functions, and user-defined iterables.
+// Syntax- for (variable of iterable) {
+  // code block to be executed
+// }
 
 // const animal = ['lion', 'falcon', 'elephant']
 // for (const element of animal) {
@@ -327,18 +330,17 @@ const amp = {
 }
 console.log(amp.purpose())
 
-// ******this - In an object method, this refers to the object.
-// *****object Values******
+// this - In an object method, this refers to the object. - “This” keyword refers to an object that is executing the current piece of code. It references the object that is executing the current function. If the function being referenced is a regular function, “this” references the global object. 
+
+// object Values - The Object.values() static method returns an array of a given object's own enumerable string-keyed property values.
+// Syntax - Object.values(obj)
 const ampArray = Object.values(amp)
 console.log(ampArray)
 
-// *****object keys********
-// const object1 = {
-//     a: 'somestring',
-//     b: 42,
-//     c: false
-//   };
-//   console.log(Object.keys(object1));
+// object keys - The Object.keys() static method returns an array of a given object's own enumerable string-keyed property names.
+// Syntax - Object.keys(object)
+const ampDetailsArray = Object.keys(amp)
+console.log(ampDetailsArray);
 
 // *****object entries*****
 // ******constructor
@@ -355,6 +357,7 @@ console.log(ampArray)
     // Rejected
 // fetch
 // async await
+// JSON.stringify()
 // ******React
 // jsx
 // functional component
