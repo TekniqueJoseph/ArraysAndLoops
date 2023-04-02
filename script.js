@@ -364,7 +364,22 @@ function Person(first, last, age, eye) {
 const myFather = new Person("John", "Doe", 50, "blue");
 console.log(myFather)
 
-// ******deconstructor
+// ******Destructuring
+const card = {
+    manufacture: 'Nvidia',
+    model: 'geForce',
+    version: 6,
+    memory: '32gz'
+}
+
+let {manufacture, model, version, memory} = card;
+console.log(model)
+
+const video = (() =>{
+    return `The model is ${model} with ${memory} of memory`;
+})
+console.log(video())
+
 // spread operator
 // clases
 // class ChildClass extends ParentClass { /* … */ }
