@@ -342,7 +342,12 @@ console.log(ampArray)
 const ampDetailsArray = Object.keys(amp)
 console.log(ampDetailsArray);
 
+
 // *****object entries*****
+
+const ampSpecs = Object.entries(amp)
+console.log(ampSpecs)
+
 // ******constructor
 // ******deconstructor
 // spread operator
