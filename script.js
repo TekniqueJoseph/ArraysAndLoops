@@ -412,9 +412,56 @@ const myVehicle = {
   const numberArray = [1, 2, 3];
   console.log(sum(...numberArray));
 
-// clases
-// class ChildClass extends ParentClass { /* … */ }
-// super
+// clases - Classes are in fact "special functions", and just as you can define function expressions and function declarations, a class can be defined in two ways: a class expression or a class declaration.
+// Declaration way
+class Car {
+    constructor(name, year) {
+      this.name = name;
+      this.year = year;
+    }
+  }
+  const myCar1 = new Car("Ford", 2014);
+  const myCar2 = new Car("Audi", 2019);
+console.log(`My ${myCar1.name} was made in ${myCar1.year}`)
+
+class Car2 {
+    constructor(brand) {
+      this.carname = brand;
+    }
+    present() {
+      return 'I have a ' + this.carname;
+    }
+  }
+  const carz = new Car2('Audo')
+  console.log(carz.present())
+// class - ChildClass extends ParentClass { /* … */ } - The extends keyword is used to create a child class of another class (parent).
+// super - The super keyword is used to access properties on an object literal or class's [[Prototype]], or invoke a superclass's constructor.
+  class Model extends Car2 {
+    constructor(brand, mod) {
+      super(brand);
+      this.model = mod;
+    }
+    show() {
+      return this.present() + ', it is a ' + this.model;
+    }
+  }
+  const mycar = new Model("Ford", "Mustang");
+  console.log(mycar.show())
+
+  class Player {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+    }
+    introduce(){
+        console.log(`Hi I am ${this.name}, I'm ${this.type}!`)
+    }
+  }
+
+  const play = new Player('Ghost Face', 'Savage')
+  console.log(play.introduce())
+
+
 // JSON.stringify()
 // JSON.parse()
 // fetch()
@@ -425,6 +472,7 @@ const myVehicle = {
     // Fulfilled
     // Rejected
 // async await
+// try catch
 // ******React
 // jsx
 // functional component
