@@ -7,7 +7,8 @@ btn.addEventListener('click', function () {
     document.querySelector('#pop').appendChild(click)
 }, { once: true })
 
-// // **********map methods***********
+// map method - creates a new array from calling a function for every array element. does not execute the function for empty elements. does not change the original array
+// Syntax - array.map(function(currentValue, index, arr), thisValue)
 // // String Array
 // const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
 // // map method iterates through the wu array and returns each string from the array wu into new array members
@@ -114,7 +115,8 @@ btn.addEventListener('click', function () {
 // })
 // console.log(newName)
 
-// // ******filter method - The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.******
+// filter method - The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+// Syntax - array.filter(function(currentValue, index, arr), thisValue)
 // const wuTang = ['rza', 'gza', 'odb', 'dec', 'U God', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
 // // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the method
 // const results = wuTang.filter((chars) => {
@@ -155,8 +157,9 @@ btn.addEventListener('click', function () {
 // console.log(evenNumeral)
 
 
-// // ****Reduce Array********
-// // reduce method iterates through reduceNums array and multiplies each array value(curr), by accu whos's initial value is 1. The reduce method does not return an array. It simply returns a value
+// // ****Reduce Array - reduce method iterates through reduceNums array and multiplies each array value(curr), by accu whos's initial value is 1. The reduce method does not return an array. It simply returns a value
+// and does not effect the original array
+// Syntax - array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
 // const reduceNums = [1,2,3,4,5]
 // let reduce = reduceNums.reduce((accu,curr) => {
 //     return accu * curr
@@ -179,9 +182,8 @@ btn.addEventListener('click', function () {
 // },0)
 // console.log('team points doubled',doublePoints)
 
-// // *******sort*************
-    // The sort() method sorts the elements of an array in place and returns the reference to the same array, now sorted. 
-    // The default sort order is ascending, built upon converting the elements into strings, then   comparing their sequences of UTF-16 code units values.
+// sort - The sort() method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+// Stntax - array.sort(compareFunction)
 // const months = ['March', 'Jan', 'Feb', 'Dec'];
 // const sortedMonths = () =>{
 //     return months.sort()
@@ -220,8 +222,6 @@ btn.addEventListener('click', function () {
 // console.log('new mapNum array sorted by number',mapNum)
 // console.log('original numbers2 array sorted by string',numbers2.sort())
 
-
-
 // let reverseNums = [0, 1, 2, 3, 10, 20, 30 ];
 // const revNums2 = reverseNums.sort((a,b) =>{
 //     return b-a
@@ -234,8 +234,8 @@ btn.addEventListener('click', function () {
 // }
 // console.log(reverseNums2())
 
-// // *******every************
-// The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+// every -  The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+// Syntax - array.every(function(currentValue, index, arr), thisValue)
 // const digits = [1, 30, 39, 29, 10, 13];
 
 // const evaluate = digits.every((nums) => {
@@ -255,36 +255,52 @@ btn.addEventListener('click', function () {
 // })
 // console.log(char)
 
-// // *******some*************
-// The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+// some - The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+// Syntax - array.some(function(value, index, arr), this)
+// const digit2 = [1, 2, 3, 4, 5];
+// const check = digit2.some((nums) => {
+//     return nums % 2 === 0
+// })
+// console.log(check)
 
-const digit2 = [1, 2, 3, 4, 5];
-const check = digit2.some((nums) => {
-    return nums % 2 === 0
+// const crew = ['phipe', 'tip', 'shaheed', 'jarobee']
+// const letters = crew.some((lets) => {
+//     return lets.length === 4
+// })
+// console.log(letters)
+
+// const chars = crew.some((letts) => {
+//     return letts.includes('p')
+// })
+// console.log(chars)
+
+// // // ***flat flat map********
+// const position = [[1, 2], [3, 4], [5, 6]];
+// const seed = position.flatMap((num) => {
+//     return num.flat() 
+// })
+// console.log('position array',position)
+// console.log(`flattened position array in new seed array`,seed)
+
+
+// forEach - The forEach() method executes a provided function once for each array element.
+// Syntax - array.forEach(function(currentValue, index, arr), thisValue)
+// array.forEach(function(currentValue, index, arr), thisValue)
+const moz = ['x', 'y', 'z'];
+moz.forEach((element =>{
+    console.log(element)
+}))
+
+const alph = ['a', 'b', 'c'];
+const newAlph = alph.map(element => {
+    alph.forEach((ele) =>{
+        return ele
+    })
+    return element
 })
-console.log(check)
 
-const crew = ['phipe', 'tip', 'shaheed', 'jarobee']
-const letters = crew.some((lets) => {
-    return lets.length === 4
-})
-console.log(letters)
+console.log(newAlph)
 
-const chars = crew.some((letts) => {
-    return letts.includes('p')
-})
-console.log(chars)
-
-// // ***flat flat map********
-const position = [[1, 2], [3, 4], [5, 6]];
-const seed = position.flatMap((num) => {
-    return num.flat() 
-})
-console.log('position array',position)
-console.log(`flattened position array in new seed array`,seed)
-
-
-// *******forEach**********
 // *******for of***********
 
 // *****object keys********
@@ -294,22 +310,33 @@ console.log(`flattened position array in new seed array`,seed)
 //     c: false
 //   };
 //   console.log(Object.keys(object1));
-
 // *****object Values******
 // *****object entries*****
+// spread operator
+// clases
+// class ChildClass extends ParentClass { /* … */ }
+// super
 // then()
-// Pomises (resolve reject catch timeout setTimeout)
+// Pomises (resolve reject catch timeout setTimeout)// state
 // A JavaScript Promise object can be:
 // Pending
 // Fulfilled
 // Rejected
-
-// clases
-// class ChildClass extends ParentClass { /* … */ }
-// super
-// shallow copy
-// spread operator
+// jsx
+// functional component
+// class componet
+// props
 // useState
+// shallow copy vs deep copy --- value vs reference
+// a = 25
+// b = a //copies value, not address
+// console.log(a)
+// console.log(b)
+// a = 45
+// console.log(a)
+// console.log(b)
+
+
 //  let counter = 0;
 
 //  function incrementCounter(){
