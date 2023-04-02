@@ -447,7 +447,8 @@ class Car2 {
   }
   const mycar = new Model("Ford", "Mustang");
   console.log(mycar.show())
-
+  
+// Course Code from Class and Extends lesson
   class Player {
     constructor(name, type) {
         this.name = name;
