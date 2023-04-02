@@ -285,23 +285,52 @@ btn.addEventListener('click', function () {
 
 // forEach - The forEach() method executes a provided function once for each array element.
 // Syntax - array.forEach(function(currentValue, index, arr), thisValue)
-// array.forEach(function(currentValue, index, arr), thisValue)
-const moz = ['x', 'y', 'z'];
-moz.forEach((element =>{
-    console.log(element)
-}))
 
-const alph = ['a', 'b', 'c'];
-const newAlph = alph.map(element => {
-    alph.forEach((ele) =>{
-        return ele
-    })
-    return element
-})
+// const moz = ['x', 'y', 'z'];
+// moz.forEach((element =>{
+//     console.log(element)
+// }))
 
-console.log(newAlph)
+// const alph = ['a', 'b', 'c'];
+// const newAlph = alph.map(element => {
+//     alph.forEach((ele) =>{
+//         return ele
+//     })
+//     return element
+// })
+// console.log(newAlph)
 
-// *******for of***********
+// for...of - The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object. Iterable objects include instances of built-ins such as Array, String, TypedArray, Map, Set, NodeList (and other DOM collections), as well as the arguments object, generators produced by generator functions, and user-defined iterables.
+
+// const animal = ['lion', 'falcon', 'elephant']
+// for (const element of animal) {
+//     console.log(element);
+//   }
+
+// const gems = ['amethyst', 'adventurine', 'howlite']
+// const newGems = gems.map((ele) =>{
+//     for (const element of gems){
+//         return ele
+//     }
+// })
+// console.log(newGems)
+// *******Objects*******
+const amp = {
+    brand: 'QSC',
+    modelName: 'RMX 2450a',
+    watts: [2400, 3000],
+    mode: 'bridge',
+    purpose()
+    {
+        console.log(`The ${this.modelName} with ${this.watts[0]} watts will rock the house.`);
+    },
+}
+console.log(amp.purpose())
+
+// ******this - In an object method, this refers to the object.
+// *****object Values******
+const ampArray = Object.values(amp)
+console.log(ampArray)
 
 // *****object keys********
 // const object1 = {
@@ -310,8 +339,10 @@ console.log(newAlph)
 //     c: false
 //   };
 //   console.log(Object.keys(object1));
-// *****object Values******
+
 // *****object entries*****
+// ******constructor
+// ******deconstructor
 // spread operator
 // clases
 // class ChildClass extends ParentClass { /* … */ }
@@ -319,14 +350,22 @@ console.log(newAlph)
 // then()
 // Pomises (resolve reject catch timeout setTimeout)// state
 // A JavaScript Promise object can be:
-// Pending
-// Fulfilled
-// Rejected
+    // Pending
+    // Fulfilled
+    // Rejected
+// fetch
+// async await
+// ******React
 // jsx
 // functional component
 // class componet
 // props
+// state
 // useState
+
+// ****TOPICS TO EXPLORE
+// callback functions
+// currying
 // shallow copy vs deep copy --- value vs reference
 // a = 25
 // b = a //copies value, not address
@@ -335,8 +374,6 @@ console.log(newAlph)
 // a = 45
 // console.log(a)
 // console.log(b)
-
-
 //  let counter = 0;
 
 //  function incrementCounter(){
