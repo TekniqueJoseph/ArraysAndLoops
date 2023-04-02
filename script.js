@@ -1,3 +1,12 @@
+let btn = document.querySelector('#btn');
+btn.addEventListener('click', function () {
+    let click = document.createElement('h3')
+    let letters = document.createTextNode('when the emcees came...');
+    click.appendChild(letters);
+    click.classList.add('animate__animated', 'animate__rubberBand');
+    document.querySelector('#pop').appendChild(click)
+}, { once: true })
+
 // // **********map methods***********
 // // String Array
 // const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
@@ -171,7 +180,8 @@
 // console.log('team points doubled',doublePoints)
 
 // // *******sort*************
-// The sort() method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+    // The sort() method sorts the elements of an array in place and returns the reference to the same array, now sorted. 
+    // The default sort order is ascending, built upon converting the elements into strings, then   comparing their sequences of UTF-16 code units values.
 // const months = ['March', 'Jan', 'Feb', 'Dec'];
 // const sortedMonths = () =>{
 //     return months.sort()
