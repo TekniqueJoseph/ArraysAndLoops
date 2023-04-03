@@ -494,15 +494,16 @@ class Neighborhood extends Player {
 
 // JSON.stringify()
 // JSON.parse()
-// fetch()
 // then()
+// fetch()
+// async await
+// try catch
 // Pomises (resolve reject catch timeout setTimeout)
 // A JavaScript Promise object can be:
     // Pending
     // Fulfilled
     // Rejected
-// async await
-// try catch
+
 // ******React
 // jsx
 // functional component
