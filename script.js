@@ -475,7 +475,7 @@ class Neighborhood extends Player {
         this.location = location;
     }
     place() {
-        console.log(`I'm ${this.name}!!!! I'm from ${this.location} son!!`)
+        console.log(`I'm ${this.name}!!!! I'm from ${this.location} son!!!`)
     }
 }
 
