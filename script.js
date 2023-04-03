@@ -69,15 +69,15 @@ btn.addEventListener('click', function () {
 // console.log('array2',array2)
 
 // // the code below shows how the concat method can beused to combine two arrays
-const arr1 = [1,2,3];
-const arr2 = [4,5,6];
-console.log('arr1',arr1); // [1,2,3]
-console.log('arr2',arr2); // [4,5,6]
-// // // Merge arrays using concat
-const merged = arr1.concat(arr2);
-const spread = [...arr1, ...arr2]
-console.log('merged arr1 & arr2',merged); // [1,2,3,4,5,6]
-console.log('spread arr1 & arr2',spread)
+// const arr1 = [1,2,3];
+// const arr2 = [4,5,6];
+// console.log('arr1',arr1); // [1,2,3]
+// console.log('arr2',arr2); // [4,5,6]
+// // // // Merge arrays using concat
+// const merged = arr1.concat(arr2);
+// const spread = [...arr1, ...arr2]
+// console.log('merged arr1 & arr2',merged); // [1,2,3,4,5,6]
+// console.log('spread arr1 & arr2',spread)
 // // the code below maps through the combined arrays and mulyiplies each element by 5
 // const combined = (arr1.concat(arr2).map(num => {
 //     return `Value ${num} * 5 = ${num * 5}`
@@ -490,7 +490,6 @@ console.log('spread arr1 & arr2',spread)
 
 // const wizard1 = new Wizard('Rza', 'Abbot')
 // const wizard2 = new Wizard('Gza', 'Swordsman')
-
 // console.log(wizard1.introduce())
 // console.log(wizard2.introduce())
 
@@ -519,6 +518,16 @@ console.log('spread arr1 & arr2',spread)
 // ****TOPICS TO EXPLORE
 // Video of stringing methods (map filter reduce video watched 4-2 night)
 // callback functions
+function greeting(name) {
+    alert(`Hello, ${name}`);
+  }
+  
+  function processUserInput(callback) {
+    const name = prompt("Please enter your name.");
+    callback(name);
+  }
+  
+  processUserInput(greeting);
 
 // currying - // Currying simply means evaluating functions with multiple arguments and decomposing them into a sequence of functions with a single argument.In other terms, currying is when a function — instead of taking all arguments at one time — takes the first one and returns a new function, which takes the second one and returns a new function, which takes the third one, etc. until all arguments are completed.
 
