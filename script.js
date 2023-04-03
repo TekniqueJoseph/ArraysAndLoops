@@ -448,7 +448,7 @@ class Car2 {
   const mycar = new Model("Ford", "Mustang");
   console.log(mycar.show())
 
-// Course Code from Class and Extends lesson
+// Course Code from Class Extends and Super lesson
 class Player {
     constructor(name, type) {
         this.name = name;
@@ -479,18 +479,20 @@ class Neighborhood extends Player {
     }
 }
 
+const playin = new Wizard('Ghost Face', 'Savage')
+console.log(playin.introduce())
+const playin2 = new Wizard('Ghost Face','Savage', 'glock')
+console.log(playin2.play())
+const playin3 = new Neighborhood('Ghost Face', 'glock','Stapleton')
+console.log(playin3.place())
+
 // const wizard1 = new Wizard('Rza', 'Abbot')
 // const wizard2 = new Wizard('Gza', 'Swordsman')
 
 // console.log(wizard1.introduce())
 // console.log(wizard2.introduce())
 
-  const playin = new Wizard('Ghost Face', 'Savage')
-  console.log(playin.introduce())
-  const playin2 = new Wizard('Ghost Face','Savage', 'glock')
-  console.log(playin2.play())
-  const playin3 = new Neighborhood('Ghost Face', 'glock','Stapleton')
-  console.log(playin3.place())
+
 
 // JSON.stringify()
 // JSON.parse()

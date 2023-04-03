@@ -6,7 +6,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 100px 50px 68vh 100px;
+    grid-template-rows: 80px 50px 68vh 100px;
 }
 h1{
     color: aliceblue;
@@ -49,8 +49,8 @@ li:hover{
     text-align: center;
 }
 img{
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     transition: transform 1.5s ease-in-out;
     margin-top: 5vh;
