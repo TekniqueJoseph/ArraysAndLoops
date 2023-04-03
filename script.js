@@ -434,7 +434,7 @@ class Car2 {
   }
   const carz = new Car2('Audo')
   console.log(carz.present())
-// class - ChildClass extends ParentClass { /* … */ } - The extends keyword is used to create a child class of another class (parent).
+// class - ChildClass extends ParentClass { /* … */ } - The extends keyword is used to create a child class of another class (parent) (more below).
 // super - The super keyword is used to access properties on an object literal or class's [[Prototype]], or invoke a superclass's constructor.
   class Model extends Car2 {
     constructor(brand, mod) {
