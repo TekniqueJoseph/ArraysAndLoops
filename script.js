@@ -480,7 +480,6 @@ class Wizard extends Player {
   const playin2 = new Wizard('Ghost Face','Savage')
   console.log(playin2.play())
 
-
 // JSON.stringify()
 // JSON.parse()
 // fetch()
