@@ -493,20 +493,6 @@ btn.addEventListener('click', function () {
 // console.log(wizard1.introduce())
 // console.log(wizard2.introduce())
 
-
-
-// JSON.stringify()
-// JSON.parse()
-// then()
-// fetch()
-// async await
-// try catch
-// Pomises (resolve reject catch timeout setTimeout)
-// A JavaScript Promise object can be:
-    // Pending
-    // Fulfilled
-    // Rejected
-
 // ******React
 // jsx
 // functional component
@@ -514,6 +500,55 @@ btn.addEventListener('click', function () {
 // props
 // state
 // useState
+
+
+
+
+// JSON.stringify() - A common use of JSON is to exchange data to/from a web server. When sending data to a web server, the data has to be a string. The JSON.stringify() static method converts a JavaScript value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.
+// JSON.stringify(value) - value: It is the value that is to be converted into a JSON string.
+// JSON.stringify(value, replacer) - It is an optional parameter. This parameter value can be an altering function or an array used as a selected filter for the stringify. If the value is empty or null then all properties of an object are included in a string.
+// JSON.stringify(value, replacer, space) - It is also an optional parameter. This argument is used to control spacing in the final string generated using JSON.stringify() function. It can be a number or a string if it is a number then the specified number of spaces are indented to the final string and if it is a string then that string is (up to 10 characters) used for indentation.
+
+// JSON.parse()- The JSON.parse() static method parses a JSON string, constructing the JavaScript value or object described by the string. An optional reviver function can be provided to perform a transformation on the resulting object before it is returned.
+// Syntax - JSON.parse(text) // JSON.parse(text, reviver)
+
+
+
+
+// Pomise - A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future. 
+
+// A JavaScript Promise object can be:
+    // Pending -  initial state, neither fulfilled nor rejected.
+    // Fulfilled - meaning that the operation was completed successfully.
+    // Rejected - meaning that the operation failed.
+
+//     let promise = new Promise(function(resolve, reject){
+//       //do something
+//  });
+
+// const count = true;
+// let countValue = new Promise(function (resolve, reject) {
+//     if (count) {
+//         resolve("There is a count value.");
+//     } else {
+//         reject("There is no count value");
+//     }
+// });
+// console.log(countValue);
+
+
+
+// then() - The then() method of a Promise object takes up to two arguments: callback functions for the fulfilled and rejected cases of the Promise. It immediately returns an equivalent Promise object, allowing you to chain calls to other promise methods.
+// Syntax - then(onFulfilled) // then(onFulfilled, onRejected)
+
+// async await
+// fetch()
+// try catch video 170 twoard the end
+// timeout 
+// setTimeout
+
+
+
 
 // ****TOPICS TO EXPLORE
 // Video of stringing methods (map filter reduce video watched 4-2 night)
