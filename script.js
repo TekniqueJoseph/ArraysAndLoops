@@ -513,6 +513,7 @@ class Neighborhood extends Player {
 // useState
 
 // ****TOPICS TO EXPLORE
+// Video of stringing methods (map filter reduce video watched 4-2 night)
 // callback functions
 // currying
 // shallow copy vs deep copy --- value vs reference
