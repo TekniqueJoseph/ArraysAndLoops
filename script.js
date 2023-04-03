@@ -469,6 +469,16 @@ class Wizard extends Player {
     }
 }
 
+class Neighborhood extends Player {
+    constructor(name, type, location) {
+        super(name, type)
+        this.location = location;
+    }
+    place() {
+        console.log(`I'm ${this.name}!!!! I'm from ${this.location} son!!`)
+    }
+}
+
 // const wizard1 = new Wizard('Rza', 'Abbot')
 // const wizard2 = new Wizard('Gza', 'Swordsman')
 
@@ -477,9 +487,10 @@ class Wizard extends Player {
 
   const playin = new Wizard('Ghost Face', 'Savage')
   console.log(playin.introduce())
-
   const playin2 = new Wizard('Ghost Face','Savage', 'glock')
   console.log(playin2.play())
+  const playin3 = new Neighborhood('Ghost Face', 'glock','Stapleton')
+  console.log(playin3.place())
 
 // JSON.stringify()
 // JSON.parse()
