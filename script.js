@@ -515,9 +515,21 @@ class Neighborhood extends Player {
 // ****TOPICS TO EXPLORE
 // Video of stringing methods (map filter reduce video watched 4-2 night)
 // callback functions
-// currying
+
+// currying - // Currying simply means evaluating functions with multiple arguments and decomposing them into a sequence of functions with a single argument.In other terms, currying is when a function — instead of taking all arguments at one time — takes the first one and returns a new function, which takes the second one and returns a new function, which takes the third one, etc. until all arguments are completed.
+
+// Curried version
+// const addCurry =(a) => {
+//     return (b)=>{
+//         return (c)=>{
+//             return a+b+c
+//         }
+//     }
+// }
+// console.log(addCurry(2)(3)(5)) // 10
+
 // shallow copy vs deep copy --- value vs reference
-// // Viseo 162 Pass by Value vs Pass By Reference
+// // Video 162 Pass by Value vs Pass By Reference
 // a = 25
 // b = a //copies value, not address
 
