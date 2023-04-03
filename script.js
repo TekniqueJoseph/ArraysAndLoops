@@ -447,9 +447,9 @@ class Car2 {
   }
   const mycar = new Model("Ford", "Mustang");
   console.log(mycar.show())
-  
+
 // Course Code from Class and Extends lesson
-  class Player {
+class Player {
     constructor(name, type) {
         this.name = name;
         this.type = type;
@@ -457,10 +457,28 @@ class Car2 {
     introduce(){
         console.log(`Hi I am ${this.name}, I'm ${this.type}!`)
     }
-  }
+}
 
-  const play = new Player('Ghost Face', 'Savage')
-  console.log(play.introduce())
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type)
+    }
+    play() {
+        console.log(`Hold on now ${this.type}!`)
+    }
+}
+
+// const wizard1 = new Wizard('Rza', 'Abbot')
+// const wizard2 = new Wizard('Gza', 'Swordsman')
+
+// console.log(wizard1.introduce())
+// console.log(wizard2.introduce())
+
+  const playin = new Player('Ghost Face', 'Savage')
+  console.log(playin.introduce())
+
+  const playin2 = new Wizard('Ghost Face','Savage')
+  console.log(playin2.play())
 
 
 // JSON.stringify()
