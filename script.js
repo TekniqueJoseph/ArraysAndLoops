@@ -460,11 +460,12 @@ class Player {
 }
 
 class Wizard extends Player {
-    constructor(name, type) {
+    constructor(name, type, weapon) {
         super(name, type)
+        this.weapon = weapon;
     }
     play() {
-        console.log(`Hold on now ${this.type}!`)
+        console.log(`Hold on now ${this.type}! Put that ${this.weapon} away`)
     }
 }
 
@@ -474,10 +475,10 @@ class Wizard extends Player {
 // console.log(wizard1.introduce())
 // console.log(wizard2.introduce())
 
-  const playin = new Player('Ghost Face', 'Savage')
+  const playin = new Wizard('Ghost Face', 'Savage')
   console.log(playin.introduce())
 
-  const playin2 = new Wizard('Ghost Face','Savage')
+  const playin2 = new Wizard('Ghost Face','Savage', 'glock')
   console.log(playin2.play())
 
 // JSON.stringify()
