@@ -518,16 +518,16 @@ btn.addEventListener('click', function () {
 // ****TOPICS TO EXPLORE
 // Video of stringing methods (map filter reduce video watched 4-2 night)
 // callback functions
-function greeting(name) {
-    alert(`Hello, ${name}`);
-  }
+// function greeting(name) {
+//     alert(`Hello, ${name}`);
+//   }
   
-  function processUserInput(callback) {
-    const name = prompt("Please enter your name.");
-    callback(name);
-  }
+//   function processUserInput(callback) {
+//     const name = prompt("Please enter your name.");
+//     callback(name);
+//   }
   
-  processUserInput(greeting);
+//   processUserInput(greeting);
 
 // currying - // Currying simply means evaluating functions with multiple arguments and decomposing them into a sequence of functions with a single argument.In other terms, currying is when a function — instead of taking all arguments at one time — takes the first one and returns a new function, which takes the second one and returns a new function, which takes the third one, etc. until all arguments are completed.
 
