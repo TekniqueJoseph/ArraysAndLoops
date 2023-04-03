@@ -69,13 +69,15 @@ btn.addEventListener('click', function () {
 // console.log('array2',array2)
 
 // // the code below shows how the concat method can beused to combine two arrays
-// const arr1 = [1,2,3];
-// const arr2 = [4,5,6];
-// console.log('arr1',arr1); // [1,2,3]
-// console.log('arr2',arr2); // [4,5,6]
-// // // // Merge arrays using concat
-// const merged = arr1.concat(arr2);
-// console.log('merged arr1 & arr2',merged); // [1,2,3,4,5,6]
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+console.log('arr1',arr1); // [1,2,3]
+console.log('arr2',arr2); // [4,5,6]
+// // // Merge arrays using concat
+const merged = arr1.concat(arr2);
+const spread = [...arr1, ...arr2]
+console.log('merged arr1 & arr2',merged); // [1,2,3,4,5,6]
+console.log('spread arr1 & arr2',spread)
 // // the code below maps through the combined arrays and mulyiplies each element by 5
 // const combined = (arr1.concat(arr2).map(num => {
 //     return `Value ${num} * 5 = ${num * 5}`
@@ -291,200 +293,200 @@ btn.addEventListener('click', function () {
 //     console.log(element)
 // }))
 
-// const alph = ['a', 'b', 'c'];
-// const newAlph = alph.map(element => {
-//     alph.forEach((ele) =>{
-//         return ele
-//     })
-//     return element
-// })
-// console.log(newAlph)
+// // const alph = ['a', 'b', 'c'];
+// // const newAlph = alph.map(element => {
+// //     alph.forEach((ele) =>{
+// //         return ele
+// //     })
+// //     return element
+// // })
+// // console.log(newAlph)
 
-// for...of - The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object. Iterable objects include instances of built-ins such as Array, String, TypedArray, Map, Set, NodeList (and other DOM collections), as well as the arguments object, generators produced by generator functions, and user-defined iterables.
-// Syntax- for (variable of iterable) {
-  // code block to be executed
-// }
+// // for...of - The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object. Iterable objects include instances of built-ins such as Array, String, TypedArray, Map, Set, NodeList (and other DOM collections), as well as the arguments object, generators produced by generator functions, and user-defined iterables.
+// // Syntax- for (variable of iterable) {
+//   // code block to be executed
+// // }
 
 // const animal = ['lion', 'falcon', 'elephant']
 // for (const element of animal) {
 //     console.log(element);
 //   }
 
-// const gems = ['amethyst', 'adventurine', 'howlite']
-// const newGems = gems.map((ele) =>{
-//     for (const element of gems){
-//         return ele
-//     }
+// // const gems = ['amethyst', 'adventurine', 'howlite']
+// // const newGems = gems.map((ele) =>{
+// //     for (const element of gems){
+// //         return ele
+// //     }
+// // })
+// // console.log(newGems)
+// // Objects - JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.
+// const amp = {
+//     brand: 'QSC',
+//     modelName: 'RMX 2450a',
+//     watts: [2400, 3000],
+//     mode: 'bridge',
+//     purpose()
+//     {
+//         console.log(`The ${this.modelName} with ${this.watts[0]} watts is gonna bump.`);
+//     },
+// }
+// console.log(amp.purpose())
+
+// // this - In an object method, this refers to the object. - “This” keyword refers to an object that is executing the current piece of code. It references the object that is executing the current function. If the function being referenced is a regular function, “this” references the global object. 
+
+// // object Values - The Object.values() static method returns an array of a given object's own enumerable string-keyed property values.
+// // Syntax - Object.values(obj)
+// const ampArray = Object.values(amp)
+// console.log(ampArray)
+
+// // object keys - The Object.keys() static method returns an array of a given object's own enumerable string-keyed property names.
+// // Syntax - Object.keys(object)
+// const ampDetailsArray = Object.keys(amp)
+// console.log(ampDetailsArray);
+
+// // object entries - The Object.entries() static method returns an array of a given object's own enumerable string-keyed property key-value pairs.
+// // syntax - Object.entries(obj)
+// const ampSpecs = Object.entries(amp)
+// console.log(ampSpecs)
+
+// for (const [key, value] of Object.entries(amp)) {
+//     console.log(`${key}: ${value}`);
+//   }
+
+// // constructor - The Object() constructor turns the input into an object. Its behavior depends on the input's type. If the value is null or undefined, it creates and returns an empty object. Otherwise, it returns an object of a Type that corresponds to the given value. If the value is an object already, it returns the value.
+// // Constructor function for Person objects
+// function Person(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//   }
+
+// // Create a Person object
+// const myFather = new Person("John", "Coffee", 50, "brown");
+// console.log(myFather)
+
+// // Destructuring - Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, and maps and set them into new, distinct variables. Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
+// const card = {
+//     manufacture: 'Nvidia',
+//     model: 'geForce',
+//     version: 6,
+//     memory: '32gz'
+// }
+
+// let {manufacture, model, version, memory} = card;
+// console.log(model)
+
+// const video = ((model, memory) => {
+//     return `The model is ${model} with ${memory} of memory`;
 // })
-// console.log(newGems)
-// *******Objects*******
-const amp = {
-    brand: 'QSC',
-    modelName: 'RMX 2450a',
-    watts: [2400, 3000],
-    mode: 'bridge',
-    purpose()
-    {
-        console.log(`The ${this.modelName} with ${this.watts[0]} watts is gonna bump.`);
-    },
-}
-console.log(amp.purpose())
+// console.log(video(model,memory))
+// console.log(video('radeon','64gz'))
+// console.log(card)
 
-// this - In an object method, this refers to the object. - “This” keyword refers to an object that is executing the current piece of code. It references the object that is executing the current function. If the function being referenced is a regular function, “this” references the global object. 
+// // spread operator - The spread (...) syntax allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected. In an object literal, the spread syntax enumerates the properties of an object and adds the key-value pairs to the object being created.
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const [one, two, ...rest] = numbers;
+// console.log(rest)
 
-// object Values - The Object.values() static method returns an array of a given object's own enumerable string-keyed property values.
-// Syntax - Object.values(obj)
-const ampArray = Object.values(amp)
-console.log(ampArray)
+// const numbersOne = [1, 2, 3];
+// const numbersTwo = [4, 5, 6];
+// const numbersCombined = [...numbersOne, ...numbersTwo];
+// console.log(numbersCombined)
 
-// object keys - The Object.keys() static method returns an array of a given object's own enumerable string-keyed property names.
-// Syntax - Object.keys(object)
-const ampDetailsArray = Object.keys(amp)
-console.log(ampDetailsArray);
-
-// object entries - The Object.entries() static method returns an array of a given object's own enumerable string-keyed property key-value pairs.
-// syntax - Object.entries(obj)
-const ampSpecs = Object.entries(amp)
-console.log(ampSpecs)
-
-for (const [key, value] of Object.entries(amp)) {
-    console.log(`${key}: ${value}`);
-  }
-
-// constructor - The Object() constructor turns the input into an object. Its behavior depends on the input's type. If the value is null or undefined, it creates and returns an empty object. Otherwise, it returns an object of a Type that corresponds to the given value. If the value is an object already, it returns the value.
-// Constructor function for Person objects
-function Person(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
-  }
-
-// Create a Person object
-const myFather = new Person("John", "Doe", 50, "blue");
-console.log(myFather)
-
-// Destructuring - Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, and maps and set them into new, distinct variables. Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
-const card = {
-    manufacture: 'Nvidia',
-    model: 'geForce',
-    version: 6,
-    memory: '32gz'
-}
-
-let {manufacture, model, version, memory} = card;
-console.log(model)
-
-const video = ((model, memory) => {
-    return `The model is ${model} with ${memory} of memory`;
-})
-console.log(video(model,memory))
-console.log(video('radeon','64gz'))
-console.log(card)
-
-// spread operator - The spread (...) syntax allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected. In an object literal, the spread syntax enumerates the properties of an object and adds the key-value pairs to the object being created.
-const numbers = [1, 2, 3, 4, 5, 6];
-const [one, two, ...rest] = numbers;
-console.log(rest)
-
-const numbersOne = [1, 2, 3];
-const numbersTwo = [4, 5, 6];
-const numbersCombined = [...numbersOne, ...numbersTwo];
-console.log(numbersCombined)
-
-const myVehicle = {
-    brand: 'Ford',
-    model: 'Mustang',
-    color: 'red'
-  }
+// const myVehicle = {
+//     brand: 'Ford',
+//     model: 'Mustang',
+//     color: 'red'
+//   }
   
-  const updateMyVehicle = {
-    type: 'car',
-    year: 2021, 
-    color: 'yellow'
-  }
-  const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
-  console.log(myUpdatedVehicle)
+//   const updateMyVehicle = {
+//     type: 'car',
+//     year: 2021, 
+//     color: 'yellow'
+//   }
+//   const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+//   console.log(myUpdatedVehicle)
 
-  function sum(x, y, z) {
-    return x + y + z;
-  }
-  const numberArray = [1, 2, 3];
-  console.log(sum(...numberArray));
+//   function sum(x, y, z) {
+//     return x + y + z;
+//   }
+//   const numberArray = [1, 2, 3];
+//   console.log(sum(...numberArray));
 
-// clases - Classes are in fact "special functions", and just as you can define function expressions and function declarations, a class can be defined in two ways: a class expression or a class declaration.
-// Declaration way
-class Car {
-    constructor(name, year) {
-      this.name = name;
-      this.year = year;
-    }
-  }
-  const myCar1 = new Car("Ford", 2014);
-  const myCar2 = new Car("Audi", 2019);
-console.log(`My ${myCar1.name} was made in ${myCar1.year}`)
+// // clases - Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are unique to classes.
+// // Declaration way
+// class Car {
+//     constructor(name, year) {
+//       this.name = name;
+//       this.year = year;
+//     }
+//   }
+//   const myCar1 = new Car("Ford", 2014);
+//   const myCar2 = new Car("Audi", 2019);
+// console.log(`My ${myCar1.name} was made in ${myCar1.year}`)
 
-class Car2 {
-    constructor(brand) {
-      this.carname = brand;
-    }
-    present() {
-      return 'I have a ' + this.carname;
-    }
-  }
-  const carz = new Car2('Audo')
-  console.log(carz.present())
-// class - ChildClass extends ParentClass { /* … */ } - The extends keyword is used to create a child class of another class (parent) (more below).
-// super - The super keyword is used to access properties on an object literal or class's [[Prototype]], or invoke a superclass's constructor.
-  class Model extends Car2 {
-    constructor(brand, mod) {
-      super(brand);
-      this.model = mod;
-    }
-    show() {
-      return this.present() + ', it is a ' + this.model;
-    }
-  }
-  const mycar = new Model("Ford", "Mustang");
-  console.log(mycar.show())
+// class Car2 {
+//     constructor(brand) {
+//       this.carname = brand;
+//     }
+//     present() {
+//       return 'I have a ' + this.carname;
+//     }
+//   }
+//   const carz = new Car2('Audo')
+//   console.log(carz.present())
+// // class - ChildClass extends ParentClass { /* … */ } - The extends keyword is used to create a child class of another class (parent) (more below).
+// // super - The super keyword is used to access properties on an object literal or class's [[Prototype]], or invoke a superclass's constructor.
+//   class Model extends Car2 {
+//     constructor(brand, mod) {
+//       super(brand);
+//       this.model = mod;
+//     }
+//     show() {
+//       return this.present() + ', it is a ' + this.model;
+//     }
+//   }
+//   const mycar = new Model("Ford", "Mustang");
+//   console.log(mycar.show())
 
-// Course Code from Class Extends and Super lesson
-class Player {
-    constructor(name, type) {
-        this.name = name;
-        this.type = type;
-    }
-    introduce(){
-        console.log(`Hi I am ${this.name}, I'm ${this.type}!`)
-    }
-}
+// // Course Code from Class Extends and Super lesson
+// class Player {
+//     constructor(name, type) {
+//         this.name = name;
+//         this.type = type;
+//     }
+//     introduce(){
+//         console.log(`Hi I am ${this.name}, I'm ${this.type}!`)
+//     }
+// }
 
-class Wizard extends Player {
-    constructor(name, type, weapon) {
-        super(name, type)
-        this.weapon = weapon;
-    }
-    play() {
-        console.log(`Hold on now ${this.type}! Put that ${this.weapon} away`)
-    }
-}
+// class Wizard extends Player {
+//     constructor(name, type, weapon) {
+//         super(name, type)
+//         this.weapon = weapon;
+//     }
+//     play() {
+//         console.log(`Hold on now ${this.type}! Put that ${this.weapon} away`)
+//     }
+// }
 
-class Neighborhood extends Player {
-    constructor(name, type, location) {
-        super(name, type)
-        this.location = location;
-    }
-    place() {
-        console.log(`I'm ${this.name}!!!! I'm from ${this.location} son!`)
-    }
-}
+// class Neighborhood extends Player {
+//     constructor(name, type, location) {
+//         super(name, type)
+//         this.location = location;
+//     }
+//     place() {
+//         console.log(`I'm ${this.name}!!!! I'm from ${this.location} son!`)
+//     }
+// }
 
-const playin = new Wizard('Ghost Face', 'Savage')
-console.log(playin.introduce())
-const playin2 = new Wizard('Ghost Face','Savage', 'glock')
-console.log(playin2.play())
-const playin3 = new Neighborhood('Ghost Face', 'glock','Stapleton')
-console.log(playin3.place())
+// const playin = new Wizard('Ghost Face', 'Savage')
+// console.log(playin.introduce())
+// const playin2 = new Wizard('Ghost Face','Savage', 'glock')
+// console.log(playin2.play())
+// const playin3 = new Neighborhood('Ghost Face', 'glock','Stapleton')
+// console.log(playin3.place())
 
 // const wizard1 = new Wizard('Rza', 'Abbot')
 // const wizard2 = new Wizard('Gza', 'Swordsman')
