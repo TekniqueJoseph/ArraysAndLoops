@@ -10,7 +10,7 @@ btn.addEventListener('click', function () {
 // map method - creates a new array from calling a function for every array element. does not execute the function for empty elements. does not change the original array
 // Syntax - array.map(function(currentValue, index, arr), thisValue)
 // // String Array
-// const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
+const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer', 'rae', 'cappadonna'];
 // // map method iterates through the wu array and returns each string from the array wu into new array members
 // const members = wu.map(cru =>{
 //     return cru
@@ -18,8 +18,8 @@ btn.addEventListener('click', function () {
 // console.log(members)
 
 // // map method iterates through the wu array and returns the length of each string into array nameLength 
-// const nameLength = wu.map(name => {
-//     return name.length;
+// const nameLength = wu.map((name, index) => {
+//     return name.length + ' chrs in index ' + index;
 // })
 // console.log(nameLength)
 
@@ -354,33 +354,35 @@ btn.addEventListener('click', function () {
 //   }
 
 // // constructor - The Object() constructor turns the input into an object. Its behavior depends on the input's type. If the value is null or undefined, it creates and returns an empty object. Otherwise, it returns an object of a Type that corresponds to the given value. If the value is an object already, it returns the value.
-// // Constructor function for Person objects
-// function Person(first, last, age, eye) {
-//     this.firstName = first;
-//     this.lastName = last;
-//     this.age = age;
-//     this.eyeColor = eye;
-//   }
+// Constructor function for Card objects
+function Card23(manufacture, model, version, memory) {
+    this.manufacture = manufacture;
+    this.model = model;
+    this.version = version;
+    this.memory = memory;
+  }
 
-// // Create a Person object
-// const myFather = new Person("John", "Coffee", 50, "brown");
-// console.log(myFather)
+// Create a Card object
+Card5 = new Card23("Nvidia", "geForce", 6, "32gz");
+console.log(Card5)
 
 // // Destructuring - Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, and maps and set them into new, distinct variables. Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
-// const card = {
-//     manufacture: 'Nvidia',
-//     model: 'geForce',
-//     version: 6,
-//     memory: '32gz'
-// }
+const card2 = {
+    manufacture: 'Nvidia',
+    model: 'geForce',
+    version: 6,
+    memory: '32gz'
+}
+console.log(card2)
 
-// let {manufacture, model, version, memory} = card;
-// console.log(model)
+let {manufacture, model, version, memory} = card2;
+console.log(model)
 
-// const video = ((model, memory) => {
-//     return `The model is ${model} with ${memory} of memory`;
-// })
-// console.log(video(model,memory))
+const video = ((model, memory) => {
+    return `The model is ${model} with ${memory} of memory`;
+})
+
+console.log(video(model,memory))
 // console.log(video('radeon','64gz'))
 // console.log(card)
 
@@ -495,6 +497,17 @@ btn.addEventListener('click', function () {
 
 
 
+
+
+// ******React
+// jsx
+// functional component
+// class componet
+// props
+// state
+// useState
+
+// ****TOPICS TO EXPLORE
 // JSON.stringify()
 // JSON.parse()
 // then()
@@ -507,27 +520,18 @@ btn.addEventListener('click', function () {
     // Fulfilled
     // Rejected
 
-// ******React
-// jsx
-// functional component
-// class componet
-// props
-// state
-// useState
-
-// ****TOPICS TO EXPLORE
 // Video of stringing methods (map filter reduce video watched 4-2 night)
+
 // callback functions
-function greeting(name) {
-    alert(`Hello, ${name}`);
-  }
+// function greeting(name) {
+//     alert(`Hello, ${name}`);
+//   }
   
-  function processUserInput(callback) {
-    const name = prompt("Please enter your name.");
-    callback(name);
-  }
-  
-  processUserInput(greeting);
+//   function processUserInput(callback) {
+//     const name = prompt("Please enter your name.");
+//     callback(name);
+//   }
+//   processUserInput(greeting);
 
 // currying - // Currying simply means evaluating functions with multiple arguments and decomposing them into a sequence of functions with a single argument.In other terms, currying is when a function — instead of taking all arguments at one time — takes the first one and returns a new function, which takes the second one and returns a new function, which takes the third one, etc. until all arguments are completed.
 
@@ -566,4 +570,4 @@ function greeting(name) {
 //     incrementCounter()
 //  }, 1000)
 
-// Create Greet.js (use import React from 'react')-> export from Greet.js -> import in App.js->  include in App component using self closing tag <Greet/>
+// Create Greet.js component (use import React from 'react') -> export from Greet.js -> import in App.js->  include in App component using self closing tag <Greet/>
