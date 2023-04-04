@@ -368,7 +368,7 @@ console.log(Card5)
 
 // // Destructuring - Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, and maps and set them into new, distinct variables. Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
 const card2 = {
-    manufacture: 'Nvidia',
+    manufacture: 'Nvidi',
     model: 'geForce',
     version: 6,
     memory: '32gz'
