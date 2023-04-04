@@ -497,17 +497,6 @@ console.log(video(model,memory))
 
 
 
-
-
-// ******React
-// jsx
-// functional component
-// class componet
-// props
-// state
-// useState
-
-// ****TOPICS TO EXPLORE
 // JSON.stringify()
 // JSON.parse()
 // then()
@@ -520,6 +509,15 @@ console.log(video(model,memory))
     // Fulfilled
     // Rejected
 
+// ******React
+// jsx
+// functional component
+// class componet
+// props
+// state
+// useState
+
+// ****TOPICS TO EXPLORE
 // Video of stringing methods (map filter reduce video watched 4-2 night)
 
 // callback functions
@@ -527,11 +525,12 @@ console.log(video(model,memory))
 //     alert(`Hello, ${name}`);
 //   }
   
-//   function processUserInput(callback) {
-//     const name = prompt("Please enter your name.");
-//     callback(name);
-//   }
-//   processUserInput(greeting);
+  function processUserInput(callback) {
+    const name = prompt("Please enter your name.");
+    callback(name);
+  }
+  
+  processUserInput(greeting);
 
 // currying - // Currying simply means evaluating functions with multiple arguments and decomposing them into a sequence of functions with a single argument.In other terms, currying is when a function — instead of taking all arguments at one time — takes the first one and returns a new function, which takes the second one and returns a new function, which takes the third one, etc. until all arguments are completed.
 
