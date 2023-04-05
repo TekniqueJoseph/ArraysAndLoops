@@ -126,14 +126,14 @@ const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer'
 // })
 // console.log(results)
 
-// // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
+// // in the code below the filter method iterates and calls the function for every iteration and filters out the elements that pass the test of the function
 // const ages = [32, 33, 16, 40];
 // const ageCheck = ages.filter((age) => {
 //       return age >= 18
 // })
 // console.log(ageCheck)
 
-// // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
+// // in the code below the filter method iterates and calls the function for every iteration and filters out the elements that pass the test of the function
 // const creatures = [
 //   {name: "Shark", habitat: "Ocean"},
 //   {name: "Whale", habitat: "Ocean"},
@@ -152,7 +152,7 @@ const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer'
 
 
 // let numeral = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// // // in the code below the filter method iterates abd calls the function for every iteration and filters out the elements that pass the test of the function
+// // // in the code below the filter method iterates and calls the function for every iteration and filters out the elements that pass the test of the function
 // let evenNumeral = numeral.filter((even) =>{
 //   return (even % 2 === 0) ? even : false;
 // })
@@ -162,11 +162,11 @@ const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer'
 // // ****Reduce Array - reduce method iterates through reduceNums array and multiplies each array value(curr), by accu whos's initial value is 1. The reduce method does not return an array. It simply returns a value
 // and does not effect the original array
 // Syntax - array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
-// const reduceNums = [1,2,3,4,5]
-// let reduce = reduceNums.reduce((accu,curr) => {
-//     return accu * curr
-// },1)
-// console.log('reduce', reduce)
+const reduceNums = [1,2,3,4,5]
+let reduce = reduceNums.reduce((accu,curr,i) => {
+    return accu*curr;
+},1)
+console.log('reduce', reduce)
 
 // const topSix = [
 //   { name: "Nigeria", position: "1st", points: 43 },
@@ -187,12 +187,12 @@ const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer'
 // sort - The sort() method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 // Stntax - array.sort(compareFunction)
 // const months = ['March', 'Jan', 'Feb', 'Dec'];
-// const sortedMonths = () =>{
+// const sortedMonths = () => {
 //     return months.sort()
 // }
 // console.log(sortedMonths())
 
-// const reversdMonths = () =>{
+// const reversdMonths = () => {
 //     return months.reverse()
 // }
 // console.log(reversdMonths())
@@ -355,34 +355,34 @@ const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer'
 
 // // constructor - The Object() constructor turns the input into an object. Its behavior depends on the input's type. If the value is null or undefined, it creates and returns an empty object. Otherwise, it returns an object of a Type that corresponds to the given value. If the value is an object already, it returns the value.
 // Constructor function for Card objects
-function Card1(manufacture, model, version, memory) {
-    this.manufacture = manufacture;
-    this.model = model;
-    this.version = version;
-    this.memory = memory;
-  }
+// function Card1(manufacture, model, version, memory) {
+//     this.manufacture = manufacture;
+//     this.model = model;
+//     this.version = version;
+//     this.memory = memory;
+//   }
 
-// Create a Card object
-Card1 = new Card1("Nvidia", "geForce", 6, "32gz");
-console.log(Card1)
+// // Create a Card object
+// Card1 = new Card1("Nvidia", "geForce", 6, "32gz");
+// console.log(Card1)
 
 // // Destructuring - Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, and maps and set them into new, distinct variables. Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
-const card2 = {
-    manufacture: 'Nvidia',
-    model: 'geForce',
-    version: 6,
-    memory: '32gz'
-}
-console.log(card2)
+// const card2 = {
+//     manufacture: 'Nvidia',
+//     model: 'geForce',
+//     version: 6,
+//     memory: '32gz'
+// }
+// console.log(card2)
 
-let {manufacture, model, version, memory} = card2;
-console.log(model)
+// let {manufacture, model, version, memory} = card2;
+// console.log(model)
 
-const video = ((model, memory) => {
-    return `The model is ${model} with ${memory} of memory`;
-})
+// const video = ((model, memory) => {
+//     return `The model is ${model} with ${memory} of memory`;
+// })
 
-console.log(video(model,memory))
+// console.log(video(model,memory))
 // console.log(video('radeon','64gz'))
 // console.log(card)
 
