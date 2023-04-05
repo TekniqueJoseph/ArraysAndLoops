@@ -355,7 +355,7 @@ const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer'
 
 // // constructor - The Object() constructor turns the input into an object. Its behavior depends on the input's type. If the value is null or undefined, it creates and returns an empty object. Otherwise, it returns an object of a Type that corresponds to the given value. If the value is an object already, it returns the value.
 // Constructor function for Card objects
-function Card23(manufacture, model, version, memory) {
+function Card1(manufacture, model, version, memory) {
     this.manufacture = manufacture;
     this.model = model;
     this.version = version;
@@ -363,8 +363,8 @@ function Card23(manufacture, model, version, memory) {
   }
 
 // Create a Card object
-Card5 = new Card23("Nvidia", "geForce", 6, "32gz");
-console.log(Card5)
+Card1 = new Card1("Nvidia", "geForce", 6, "32gz");
+console.log(Card1)
 
 // // Destructuring - Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, and maps and set them into new, distinct variables. Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
 const card2 = {
