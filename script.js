@@ -127,11 +127,11 @@ const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer'
 // console.log(results)
 
 // // in the code below the filter method iterates and calls the function for every iteration and filters out the elements that pass the test of the function
-// const ages = [32, 33, 16, 40];
-// const ageCheck = ages.filter((age) => {
-//       return age >= 18
-// })
-// console.log(ageCheck)
+const ages = [32, 33, 16, 40];
+const ageCheck = ages.filter((age) => {
+      return age >= 18
+})
+console.log(ageCheck)
 
 // // in the code below the filter method iterates and calls the function for every iteration and filters out the elements that pass the test of the function
 // const creatures = [
@@ -163,10 +163,10 @@ const wu = ['rza', 'gza', 'odb', 'dec', 'ugod', 'meth', 'ghost', 'master killer'
 // and does not effect the original array
 // Syntax - array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
 const reduceNums = [1,2,3,4,5]
-let reduce = reduceNums.reduce((accu,curr,i) => {
-    return accu*curr;
-},1)
-console.log('reduce', reduce)
+// let reduce = reduceNums.reduce((accu,curr,i) => {
+//     return accu*curr;
+// },1)
+// console.log('reduce', reduce)
 
 // const topSix = [
 //   { name: "Nigeria", position: "1st", points: 43 },
